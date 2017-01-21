@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<!-- XML element that identifies the persistence unit when instantiating an EntityManagerFactory -->
+	<persistence-unit name="assignment02-jpa">
+		<!-- List of managed persistable classes -->
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>rest.ehealth.server.model.Measurement</class>
+		<class>rest.ehealth.server.model.MeasurementHistory</class>
+		<class>rest.ehealth.server.model.Measure</class>
+		<class>rest.ehealth.server.model.Person</class>
+		<!-- List of general properties -->
+		<properties>
+			<!-- The JDBC driver used to connect to the database -->
+			<property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC" />
+			<!-- The path to the SQLite file of the database -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:sqlite:ehealth.sqlite" />
+			<!-- <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:WebContent/WEB-INF/classes/ehealth.sqlite" /> -->
+			<!-- The logging level (setted to ALL to see all the JPA related debugging information -->
+			<property name="eclipselink.logging.level" value="ALL" />
+			<!-- The automatism (setted to automatically add elements to our DB if we modify the model -->
+			<property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
+			<!-- The automatism (setted to directly apply automatic changes to the DB (not recommended) -->
+			<property name="eclipselink.ddl-generation.output-mode" value="database" />
+		</properties>
+	</persistence-unit>
+</persistence>
