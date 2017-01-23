@@ -4,6 +4,7 @@ import javax.ws.rs.ApplicationPath;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
+
 /**
  * A configuration class used by jersey to load resource classes and additional features
  * (or modules) provided by Jersey.
@@ -11,6 +12,7 @@ import org.glassfish.jersey.server.ResourceConfig;
  * @author alan
  *
  */
+
 @ApplicationPath("rest")
 public class Configuration extends ResourceConfig {
 	public Configuration () {

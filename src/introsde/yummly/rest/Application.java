@@ -8,12 +8,14 @@ import java.net.URISyntaxException;
 import org.glassfish.jersey.jdkhttp.JdkHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
+
 /**
  * The main class used to start the application server.
  * 
  * @author alan
  *
  */
+
 public class Application {
 	
 	public static void main(String[] args) throws IllegalArgumentException, IOException, URISyntaxException {
