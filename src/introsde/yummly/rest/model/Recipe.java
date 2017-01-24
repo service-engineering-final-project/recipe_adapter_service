@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement			// make it the root element
 
 // The content order in the generated schema type
-@XmlType(propOrder={"id","name","image","url"})
+@XmlType(propOrder={"id","name","image","details"})
 
 public class Recipe implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -32,7 +32,7 @@ public class Recipe implements Serializable {
 	@XmlElement private String id;
 	@XmlElement private String name;
 	@XmlElement private String image;
-	@XmlElement private String url;
+	@XmlElement private String details;
 	
 	
 	/**
@@ -61,10 +61,10 @@ public class Recipe implements Serializable {
 	
 	/**
 	 * A method that returns the URL of the detailed recipe.
-	 * @return url: the URL of the detailed recipe
+	 * @return details: the URL of the detailed recipe
 	 */
-	public String getUrl() {
-		return url;
+	public String getDetails() {
+		return details;
 	}
 	
 	/**
@@ -93,9 +93,9 @@ public class Recipe implements Serializable {
 	
 	/**
 	 * A method that sets the URL of the detailed recipe.
-	 * @param url: the URL of the detailed recipe
+	 * @param details: the URL of the detailed recipe
 	 */
-	public void setUrl(String url) {
-		this.url = url;
+	public void setDetails(String details) {
+		this.details = details;
 	}
 }
