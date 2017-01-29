@@ -52,8 +52,8 @@ public class RecipeResource {
 	
 	// Definition of some useful constants
 	final String baseUrl = "https://api.yummly.com/v1/api/";
-	private final String yummlyId = "9adc19a6";
-	private final String yummlyKey = "c62db4236d74d2ed2e187a1c6321febf";
+	private final String yummlyId = "";
+	private final String yummlyKey = "";
 
 	public RecipeResource() {
 		try {
