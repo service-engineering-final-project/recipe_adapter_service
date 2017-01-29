@@ -1,7 +1,6 @@
 # Recipe Adapter Service (REST)
 
-The **quote adapter service** is the service that provides data to the **storage data service** through a REST interface. It allows consumers to retrieve motivational quotes in a structured format (both XML and JSON) crawled from [Quotelicious](http://www.quotelicious.com);
-The **recipe adapter service** is the service that provides data to the **storage data service** through a REST interface. It allows consumers to retrieve recipes and their nutritional facts in a structured, clearer format (both XML and JSON) exploiting the [Yummly](http://www.yummly.com/) APIs (by means of an academic plan); 
+The **recipe adapter service** is the service that provides data to the **storage data service** through a REST interface. It allows consumers to retrieve recipes and their nutritional facts in a structured, clearer format (both XML and JSON) exploiting the [Yummly](http://www.yummly.com/) APIs (by means of an academic plan).
 
 | resource | link |
 |----------|------|
